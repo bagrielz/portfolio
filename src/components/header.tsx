@@ -1,20 +1,19 @@
-import Image from "next/image";
-import ThemeSwitcher from "./theme-switcher";
+import Image from 'next/image';
+import ThemeSwitcher from './theme-switcher';
 
-export async function Header() {
+export function Header() {
   return (
     <header className="container text-dark-100 dark:text-neutral-50">
       <div className="flex justify-between items-center">
         <div>
-          <span className="font-bold inline-block mb-[14px]">
-            Gabriel Stênio
-          </span>
+          <span className="font-bold inline-block mb-3.5">Gabriel Stênio</span>
           <div className="flex gap-2">
             <Image
-              src={"/icons/spotify.svg"}
+              src={'/icons/spotify.svg'}
               alt="Ícone do Spotify"
               width={24}
               height={24}
+              priority
             />
             <span className="font-semibold">Não está tocando</span>
           </div>

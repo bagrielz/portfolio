@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import { font_body } from "./functions/font";
+import type { Metadata } from 'next';
+import './globals.css';
+import { font_body } from './functions/font';
 
 export const metadata: Metadata = {
-  title: "Gabriel Stênio | Desenvolvedor",
-  description: "Sinta-se à vontade para agendarmos uma conversa.",
+  title: 'Gabriel Stênio | Desenvolvedor',
+  description: 'Sinta-se à vontade para agendarmos uma conversa.',
 };
 
 export default function RootLayout({

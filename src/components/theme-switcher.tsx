@@ -1,19 +1,26 @@
-"use client";
+'use client';
 
-import { useState, useEffect } from "react";
-import { useTheme } from "next-themes";
-import useSound from "use-sound";
+import { useState, useEffect } from 'react';
+import { useTheme } from 'next-themes';
+import useSound from 'use-sound';
 
 export default function ThemeSwitcher() {
   const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-  const [toggleThemeSoundPlay] = useSound("/sounds/toggle-theme.mp3");
+  const [isMounted, setIsMounted] = useState(false);
+  const [toggleThemeSoundPlay] = useSound('/sounds/toggle-theme.mp3');
 
+  // Efetua a montagem para evitar erros de hidratação no Next.js
   useEffect(() => {
-    setMounted(true);
+    setIsMounted(true);
   }, []);
 
-  if (!mounted) return null;
+  // Impede a renderização até que o componente esteja montado
+  if (!isMounted) return null;
+
+  const handleThemeSwitch = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark');
+    toggleThemeSoundPlay(); // Som será tocado após o clique
+  };
 
   function Sun() {
     return (
@@ -58,18 +65,17 @@ export default function ThemeSwitcher() {
 
   return (
     <button
-      aria-label={
-        theme === "dark" ? "Trocar para tema claro" : "Trocar para tema escuro"
-      }
-      onClick={() => {
-        setTheme(theme === "dark" ? "light" : "dark");
-        toggleThemeSoundPlay();
-      }}
+      aria-label={`Atualmente no tema ${
+        theme === 'dark' ? 'escuro' : 'claro'
+      }, clique para alternar para o tema ${
+        theme === 'dark' ? 'claro' : 'escuro'
+      }`}
+      onClick={handleThemeSwitch}
       className={`p-2 transition duration-300 ease-in-out rounded-md focus:outline-none ${
-        theme === "light" ? "hover:bg-neutral-100" : "hover:bg-dark-50"
+        theme === 'light' ? 'hover:bg-neutral-100' : 'hover:bg-dark-50'
       }`}
     >
-      {theme === "light" ? <Moon /> : <Sun />}
+      {theme === 'light' ? <Moon /> : <Sun />}
     </button>
   );
 }

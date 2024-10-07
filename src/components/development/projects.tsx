@@ -1,6 +1,5 @@
 import ProjectContainer from './project-container';
 
-// Dados dos projetos
 const projects = [
   {
     title: 'Dogs Next',
@@ -25,7 +24,10 @@ const projects = [
 export default function DevelopmentProjects() {
   return (
     <section aria-labelledby="development-projects" className="container my-8">
-      <h2 id="development-projects" className="font-semibold mb-6">
+      <h2
+        id="development-projects"
+        className="font-semibold text-dark-100 dark:text-neutral-50 mb-6"
+      >
         Projetos de desenvolvimento web
       </h2>
       <ul className="projects-container -ml-4 space-y-6">

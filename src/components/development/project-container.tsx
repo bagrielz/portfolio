@@ -1,7 +1,6 @@
 import { Badge } from './badge';
 import Link from 'next/link';
 
-// Componentes auxiliares para SVG
 const ArrowIcon = ({ className }: { className: string }) => (
   <svg
     className={className}
@@ -41,7 +40,7 @@ export default function ProjectContainer({
       className="group flex justify-between items-center p-4 rounded-xl transition duration-300 ease-in-out hover:bg-neutral-100 dark:hover:bg-dark-50"
     >
       <div className="font-medium">
-        <h3 className="mb-3">{title}</h3>
+        <h3 className="mb-3 text-dark-100 dark:text-neutral-50">{title}</h3>
         <p className="text-neutral-500 dark:text-neutral-200 mb-5">
           {description}
         </p>
@@ -53,8 +52,7 @@ export default function ProjectContainer({
           ))}
         </ul>
       </div>
-      <div className="relative overflow-hidden">
-        <div className="w-4 h-4"></div>
+      <div className="relative w-4 h-4 overflow-hidden">
         <ArrowIcon className="absolute fill-dark-50 dark:fill-neutral-50 right-0 top-0 transition-transform duration-500 ease-in-out group-hover:translate-x-full" />
         <ArrowIcon className="absolute fill-dark-50 dark:fill-neutral-50 right-0 top-0 -translate-x-full transition-transform duration-500 ease-in-out group-hover:translate-x-0" />
       </div>

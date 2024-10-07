@@ -7,7 +7,7 @@ const projects = [
     description: 'Redesign da página de lançamento do Samsung Galaxy Z Flip6.',
   },
   {
-    title: 'To Do List',
+    title: 'Crypto App',
     href: 'https://www.figma.com/design/vTiVpQihvrdsTRzJ4xMDBk/cripto-app-15-02-24?m=auto&t=fsoirzMdpjVNQKp9-1',
     description: 'Aplicativo para serviços de NFTs.',
   },
@@ -20,7 +20,7 @@ export default function DesignProjects() {
         id="development-projects"
         className="font-semibold text-dark-100 dark:text-neutral-50 mb-6"
       >
-        Projetos de desenvolvimento web
+        Projetos de design
       </h2>
       <ul className="projects-container -ml-4 space-y-6">
         {projects.map((project, index) => (

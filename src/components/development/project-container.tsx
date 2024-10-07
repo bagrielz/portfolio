@@ -53,7 +53,8 @@ export default function ProjectContainer({
           ))}
         </ul>
       </div>
-      <div className="relative w-4 h-4 overflow-hidden">
+      <div className="relative overflow-hidden">
+        <div className="w-4 h-4"></div>
         <ArrowIcon className="absolute fill-dark-50 dark:fill-neutral-50 right-0 top-0 transition-transform duration-500 ease-in-out group-hover:translate-x-full" />
         <ArrowIcon className="absolute fill-dark-50 dark:fill-neutral-50 right-0 top-0 -translate-x-full transition-transform duration-500 ease-in-out group-hover:translate-x-0" />
       </div>

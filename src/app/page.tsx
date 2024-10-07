@@ -1,6 +1,6 @@
-import DevelopmentProjects from "@/components/development/projects";
-import { Header } from "@/components/header";
-import ThemeProvider from "@/providers/theme-provider";
+import DevelopmentProjects from '@/components/development/projects';
+import { Header } from '@/components/header';
+import ThemeProvider from '@/providers/theme-provider';
 
 export default function Home() {
   return (

@@ -28,7 +28,7 @@ export default function DevelopmentProjects() {
       <h2 id="development-projects" className="font-semibold mb-6">
         Projetos de desenvolvimento web
       </h2>
-      <ul className="projects-container space-y-6">
+      <ul className="projects-container -ml-4 space-y-6">
         {projects.map((project, index) => (
           <li key={index}>
             <ProjectContainer

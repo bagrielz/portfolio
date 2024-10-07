@@ -6,7 +6,9 @@ export function Header() {
     <header className="container text-dark-100 dark:text-neutral-50">
       <div className="flex justify-between items-center">
         <div>
-          <span className="font-bold inline-block mb-3.5">Gabriel Stênio</span>
+          <span className="font-semibold inline-block mb-3.5">
+            Gabriel Stênio
+          </span>
           <div className="flex gap-2">
             <Image
               src={'/icons/spotify.svg'}
@@ -15,7 +17,7 @@ export function Header() {
               height={24}
               priority
             />
-            <span className="font-semibold">Não está tocando</span>
+            <span className="font-medium">Não está tocando</span>
           </div>
         </div>
         <ThemeSwitcher />

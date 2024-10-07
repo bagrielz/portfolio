@@ -25,7 +25,7 @@ const projects = [
 export default function DevelopmentProjects() {
   return (
     <section aria-labelledby="development-projects" className="container my-8">
-      <h2 id="development-projects" className="font-bold mb-6">
+      <h2 id="development-projects" className="font-semibold mb-6">
         Projetos de desenvolvimento web
       </h2>
       <ul className="space-y-6">

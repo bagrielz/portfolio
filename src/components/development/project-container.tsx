@@ -41,7 +41,7 @@ export default function ProjectContainer({
       className="group flex justify-between items-center p-4 rounded-xl transition duration-300 ease-in-out hover:bg-neutral-100 dark:hover:bg-dark-50"
     >
       <div className="font-medium">
-        <h3 className="mb-3 font-semibold">{title}</h3>
+        <h3 className="mb-3">{title}</h3>
         <p className="text-neutral-500 dark:text-neutral-200 mb-5">
           {description}
         </p>

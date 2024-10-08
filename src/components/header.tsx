@@ -3,7 +3,7 @@ import ThemeSwitcher from './theme-switcher';
 
 export function Header() {
   return (
-    <header className="container text-dark-100 dark:text-neutral-50">
+    <header className="my-24 text-dark-100 dark:text-neutral-50">
       <div className="flex justify-between items-center">
         <div>
           <span className="font-semibold inline-block mb-3.5">

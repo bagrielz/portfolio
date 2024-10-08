@@ -15,14 +15,14 @@ const projects = [
 
 export default function DesignProjects() {
   return (
-    <section aria-labelledby="development-projects" className="container my-8">
+    <section aria-labelledby="design-projects" className="mb-16">
       <h2
         id="development-projects"
         className="font-semibold text-dark-100 dark:text-neutral-50 mb-6"
       >
         Projetos de design
       </h2>
-      <ul className="projects-container -ml-4 space-y-6">
+      <ul className="w-[626px] my-10 -ml-4 space-y-6">
         {projects.map((project, index) => (
           <li key={index}>
             <ProjectContainer

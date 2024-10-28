@@ -1,5 +1,6 @@
-import Image from 'next/image';
-import ThemeSwitcher from './theme-switcher';
+import Image from "next/image";
+import ThemeSwitcher from "./theme-switcher";
+import React from "react";
 
 export function Header() {
   return (
@@ -11,7 +12,7 @@ export function Header() {
           </span>
           <div className="flex gap-2">
             <Image
-              src={'/icons/spotify.svg'}
+              src={"/icons/spotify.svg"}
               alt="Ícone do Spotify"
               width={24}
               height={24}
